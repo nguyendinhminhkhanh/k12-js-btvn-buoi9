@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 1000px;
+}
+.padding{
+    padding: 12px 24px;
+}
+.padding_i{
+    padding: 12px 24px !important;
+}
+
+.header {
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-shadow: #000000 0px 2px 5px 0px;
+    position: fixed;
+    line-height: 22.5px;
+}
+
+.header .right {
+    display: flex;
+}
+
+.header .right .more{
+    position: relative;
+}
+.header .right .more .drop_button{
+    position: absolute;
+    top: 47px;
+    left: 0;
+    box-shadow: #000000 0px 2px 5px 0px;
+    color: #000000;
+    display: none;
+}
+.header .right .more:hover .drop_button{
+    display: block;
+
+}
+.header .right .more .drop_button .button:hover{
+    background: #cccccc;
+}
+
+.header .right .box:hover{
+    background-color: #cccccc;
+    color: #000000;
+}
+.header .left:hover{
+    background: #f44336;
+
+}
+.display_none{
+    display: none;
+}
+@media(max-width: 600px) {
+    .band, .contact, .more{
+        display: none;
+    }
+    .btn-secondary{
+        line-height: 15px;
+        font-size: 20px;
+        width: 47px;
+        height: 47px;
+        padding: 0;
+        border-radius: 0px !important ;
+    }
+    .dropdown .btn-secondary:hover{
+        background: #cccccc !important;
+        color: #000000;
+    }
+    .header .left{
+        padding: 0;
+        
+    }
+    .header .left:hover{
+        background: #cccccc;
+    }
+    .bx-search-alt-2{
+        display: none !important;
+    }
+    .dropdown{
+        display: block;
+    }
+    .dropdown .btn{
+        background: #000000 !important;
+        border: none;
+    }
+    .dropdown-menu{
+        border: none !important;
+        border-radius: 0 !important;
+    }
+    .dropdown-menu .dropdown-item{
+        width: 600px !important;
+        background-color: #000000;
+        color: #ffffff;
+    }
+    .show{
+        padding: 0px !important;
+        border: 1px solid #000000;
+    }
+}
